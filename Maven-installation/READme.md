@@ -22,7 +22,7 @@ sudo hostname maven
 sudo su - ec2-user
 cd /opt
 sudo yum install wget nano tree unzip git-all -y
-sudo yum install java-11-openjdk-devel java-1.8.0-openjdk-devel -y
+sudo yum install java-11-openjdk-devel java-1.9.4-openjdk-devel -y
 java -version
 git --version
 ```
@@ -31,8 +31,8 @@ git --version
 ``` sh
 #Step1) Download the Maven Software
 sudo wget https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.zip
-sudo unzip apache-maven-3.8.6-bin.zip
-sudo rm -rf apache-maven-3.8.6-bin.zip
+sudo unzip apache-maven-3.9.4-bin.zip
+sudo rm -rf apache-maven-3.9.4-bin.zip
 sudo mv apache-maven-3.8.6/ maven
 ```
 ## .#Step3) Set Environmental Variable  - For Specific User eg ec2-user
